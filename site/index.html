@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Physical AI Safety Agent Demo</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <aside class="rail">
+        <div class="brand">
+          <div class="mark">PA</div>
+          <div>
+            <h1>Physical AI Safety Agent</h1>
+            <p>Safety-first experiment copilot for physical-AI teams</p>
+          </div>
+        </div>
+
+        <section class="panel compact">
+          <div class="panel-label">Experiment request</div>
+          <p class="request">
+            Recent replay evidence shows the previous stable baseline improved reward, but the latest matched evaluation packet still shows forward pitch spikes after push recovery and joint-limit usage near the safety limit. Keep the previous stable baseline unchanged on the control training rig. On the treatment training rig, run one treatment with +30% torso orientation penalty and +15% action smoothness using the same seed group and evaluation script. Do not send hardware commands; return the comparison, failure notes, and whether this is blocked, supported-harness only, or ready for human hardware review.
+          </p>
+        </section>
+
+        <section class="panel compact">
+          <div class="panel-label">Course concepts</div>
+          <div class="tags">
+            <span>Multi-agent</span>
+            <span>Official MCP wrapper</span>
+            <span>ADK adapter</span>
+            <span>Skills</span>
+            <span>Real replay</span>
+            <span>Safety</span>
+          </div>
+        </section>
+
+        <section class="panel compact">
+          <div class="panel-label">Who this helps</div>
+          <ul class="checks">
+            <li>Physical-AI teams</li>
+            <li>Robotics students</li>
+            <li>Small research labs</li>
+            <li>Human safety operators</li>
+          </ul>
+        </section>
+
+        <section class="panel compact">
+          <div class="panel-label">Public demo boundary</div>
+          <ul class="checks">
+            <li>No SSH</li>
+            <li>No hardware commands</li>
+            <li>No secrets</li>
+            <li>Sanitized replay only</li>
+          </ul>
+        </section>
+      </aside>
+
+      <section class="workspace">
+        <header class="topbar">
+          <div>
+            <div class="eyebrow">Experiment pair</div>
+            <h2>Current demo pair: treatment stability vs matched baseline</h2>
+          </div>
+          <div class="status-block blocked">
+            <span>Safety Gate</span>
+            <strong>Supported test only</strong>
+          </div>
+        </header>
+
+        <section class="metrics-grid">
+          <article class="metric-card">
+            <span>Fall-free rollouts</span>
+            <strong>9/10 -> 10/10</strong>
+            <em>Sanitized real replay</em>
+          </article>
+          <article class="metric-card">
+            <span>Torso pitch RMS</span>
+            <strong>0.150 -> 0.069</strong>
+            <em>Replay stability gain</em>
+          </article>
+          <article class="metric-card">
+            <span>Velocity</span>
+            <strong>0.078 -> 0.079</strong>
+            <em>Neutral proxy</em>
+          </article>
+          <article class="metric-card risk">
+            <span>Safety result</span>
+            <strong>Supported only</strong>
+            <em>No estop dry-run</em>
+          </article>
+        </section>
+
+        <section class="board">
+          <article class="node-card treatment">
+            <div class="node-head">
+              <span>Treatment rig</span>
+              <strong>Stability patch</strong>
+            </div>
+            <p>orientation penalty +30%, action smoothness +15%</p>
+            <div class="bar"><i style="width: 100%"></i></div>
+            <div class="node-stats">
+              <span>real replay</span>
+              <span>reward 69.4</span>
+              <span>fall rate 0.00</span>
+            </div>
+          </article>
+
+          <article class="node-card control">
+            <div class="node-head">
+              <span>Control rig</span>
+              <strong>Previous stable baseline</strong>
+            </div>
+            <p>previous stable baseline unchanged under matched seed group</p>
+            <div class="bar"><i style="width: 100%"></i></div>
+            <div class="node-stats">
+              <span>real replay</span>
+              <span>reward 57.5</span>
+              <span>fall rate 0.00</span>
+            </div>
+          </article>
+        </section>
+
+        <section class="split">
+          <article class="panel">
+            <div class="panel-label">Research PC evaluation</div>
+            <table>
+              <thead>
+                <tr>
+                  <th>Metric</th>
+                  <th>Control</th>
+                  <th>Treatment</th>
+                  <th>Verdict</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>Fall-free</td><td>9/10</td><td>10/10</td><td class="good">Improved</td></tr>
+                <tr><td>Torso pitch RMS</td><td>0.150</td><td>0.069</td><td class="good">Improved</td></tr>
+                <tr><td>Avg velocity</td><td>0.078</td><td>0.079</td><td>Neutral</td></tr>
+                <tr><td>Energy proxy</td><td>1.04</td><td>1.07</td><td class="warn">Regressed</td></tr>
+              </tbody>
+            </table>
+          </article>
+
+          <article class="panel decision">
+            <div class="panel-label">Robot Action Diff</div>
+            <h3>Human approval required</h3>
+            <p>The treatment replay is more stable, but replay evidence alone is not permission for unsupervised hardware testing.</p>
+            <ol>
+              <li>Run human emergency-stop dry-run.</li>
+              <li>Keep supported low-speed harness.</li>
+              <li>Record operator approval before any private lab test.</li>
+            </ol>
+            <div class="manifest">
+              <span>Mock manifest</span>
+              <strong>treatment checkpoint manifest</strong>
+            </div>
+          </article>
+        </section>
+      </section>
+    </main>
+  </body>
+</html>

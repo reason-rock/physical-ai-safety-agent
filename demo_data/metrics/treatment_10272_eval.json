@@ -1,0 +1,24 @@
+{
+  "num_rollouts": 10,
+  "fall_free_count": 10,
+  "avg_fall_time_sec": 116.192,
+  "avg_velocity": 0.079,
+  "target_velocity": 0.055,
+  "torso_pitch_rms": 0.069,
+  "torso_roll_rms": 0.073,
+  "energy_proxy": 1.069,
+  "joint_limit_max_ratio": 0.6,
+  "foot_contact_symmetry": 0.996,
+  "action_jerk": 0.284,
+  "emergency_stop_dry_run": false,
+  "source_alias": "treatment_real_replay",
+  "raw_log_included": false,
+  "metric_notes": [
+    "derived from sanitized robot CSV aggregate windows",
+    "velocity is a phase-progress proxy because global robot position is not stored in the public replay"
+  ],
+  "run_id": "treatment_10272",
+  "checkpoint": "ckpt_20m.pt",
+  "eval_config": "specs/safety_gate_spec.md",
+  "evidence_mode": "sanitized_real_replay"
+}

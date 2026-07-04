@@ -1,0 +1,28 @@
+{
+  "dataset": "gaitlab_sanitized_real_replay",
+  "generated_by": "scripts/build_real_replay.py",
+  "privacy": {
+    "raw_paths_included": false,
+    "hostnames_included": false,
+    "credentials_included": false,
+    "raw_checkpoints_included": false
+  },
+  "runs": {
+    "control": {
+      "alias": "control_real_replay",
+      "source_kind": "redacted_robot_csv",
+      "rows": 3276,
+      "duration_sec": 26.2,
+      "metrics_file": "metrics/control_real_replay_eval.json",
+      "scalars_file": "logs/control_real_replay_scalars.csv"
+    },
+    "treatment": {
+      "alias": "treatment_real_replay",
+      "source_kind": "redacted_robot_csv",
+      "rows": 14525,
+      "duration_sec": 116.192,
+      "metrics_file": "metrics/treatment_real_replay_eval.json",
+      "scalars_file": "logs/treatment_real_replay_scalars.csv"
+    }
+  }
+}

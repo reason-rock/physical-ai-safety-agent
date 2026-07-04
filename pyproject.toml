@@ -1,0 +1,23 @@
+[project]
+name = "physical-ai-safety-agent"
+version = "0.1.0"
+description = "Multi-agent safety copilot for physical-AI experiment decisions"
+requires-python = ">=3.12"
+dependencies = [
+  "pandas>=1.4,<4",
+  "fastapi>=0.115",
+  "uvicorn[standard]>=0.30",
+  "sse-starlette>=2.1",
+  "pydantic>=2.7",
+]
+
+[project.optional-dependencies]
+integrations = [
+  "mcp[cli]>=1.27,<2",
+  "google-adk>=2.0,<3",
+  "google-genai>=1.0,<2",
+]
+
+[tool.gaitlab]
+mode = "public_demo"
+real_robot_commands = false

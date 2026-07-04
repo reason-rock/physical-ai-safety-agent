@@ -1,0 +1,17 @@
+{
+  "num_rollouts": 10,
+  "fall_free_count": 6,
+  "avg_fall_time_sec": 3.2,
+  "avg_velocity": 0.052,
+  "target_velocity": 0.055,
+  "torso_pitch_rms": 0.31,
+  "energy_proxy": 1.0,
+  "joint_limit_max_ratio": 0.81,
+  "foot_contact_symmetry": 0.68,
+  "action_jerk": 0.24,
+  "emergency_stop_dry_run": false,
+  "run_id": "control_10208",
+  "checkpoint": "ckpt_20m.pt",
+  "eval_config": "specs/safety_gate_spec.md",
+  "evidence_mode": "deterministic_mock"
+}

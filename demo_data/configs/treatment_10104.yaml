@@ -1,0 +1,14 @@
+run_id: treatment_10104
+node: GPU0
+base_config: demo_data/configs/previous_stable_baseline.yaml
+controlled_variables:
+  robot_model: darwin_op
+  sim_backend: mock_public_demo
+  total_steps: 20000000
+  target_velocity: 0.055
+  sim_timestep: 0.008
+  paired_seeds: [101, 102, 103]
+patch:
+  reward.orientation_penalty: 1.3
+  reward.action_smoothness: 1.15
+  reward.velocity_tracking: 1.25

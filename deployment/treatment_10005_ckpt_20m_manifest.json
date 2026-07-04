@@ -1,0 +1,19 @@
+{
+  "policy_id": "treatment_10005_ckpt_20m",
+  "package_type": "mock_manifest_only",
+  "safety_level": "supported_test_only",
+  "free_walking_allowed": false,
+  "contains": [
+    "policy_metadata.json",
+    "evaluation_summary.json",
+    "robot_action_diff.md",
+    "operator_checklist.md"
+  ],
+  "does_not_contain": [
+    "real hardware credentials",
+    "SSH private keys",
+    "motor command scripts",
+    "auto-run deployment hooks"
+  ],
+  "human_approval_required": true
+}

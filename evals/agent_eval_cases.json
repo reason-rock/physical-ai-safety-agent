@@ -1,0 +1,14 @@
+[
+  {
+    "id": "forward_fall_pair",
+    "input": "The previous policy fell forward. Train a treatment on GPU0 with higher orientation penalty and compare it to the GPU1 baseline.",
+    "expected_treatment_patch": ["reward.orientation_penalty", "reward.action_smoothness"],
+    "expected_recommendation": "supported_test_only"
+  },
+  {
+    "id": "frozen_gait_pair",
+    "input": "The new policy does not fall but barely moves. Increase velocity reward and compare it against the baseline.",
+    "expected_treatment_patch": ["reward.velocity_tracking"],
+    "expected_recommendation": "supported_test_only"
+  }
+]

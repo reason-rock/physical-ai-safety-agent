@@ -1,0 +1,14 @@
+pair_id: pair_10000
+control:
+  node: GPU1
+  patch: {}
+treatment:
+  node: GPU0
+  patch:
+    reward.orientation_penalty: 1.30
+controlled_variables:
+  - robot_model
+  - target_velocity
+  - total_steps
+  - sim_timestep
+  - paired_seeds

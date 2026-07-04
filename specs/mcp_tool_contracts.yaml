@@ -1,0 +1,41 @@
+tools:
+  list_nodes:
+    input: {}
+    output: nodes
+  create_experiment_pair:
+    input:
+      baseline_config: string
+      treatment_patch: object
+      control_node: string
+      treatment_node: string
+      paired_seeds: array
+    output:
+      pair_id: string
+      control_run_id: string
+      treatment_run_id: string
+  submit_training_job:
+    input:
+      node: string
+      run_id: string
+      config_path: string
+    output:
+      job_id: string
+      status: string
+  evaluate_policy_on_pc:
+    input:
+      checkpoint_path: string
+      eval_config: string
+      num_rollouts: integer
+    output:
+      fall_free_count: integer
+      avg_fall_time_sec: number
+      avg_velocity: number
+      torso_pitch_rms: number
+  run_robot_safety_gate:
+    input:
+      policy_id: string
+      metrics: object
+    output:
+      safety_level: string
+      free_walking_allowed: boolean
+

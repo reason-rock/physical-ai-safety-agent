@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="760" viewBox="0 0 1280 760">
+  <rect width="1280" height="760" fill="#ffffff"/>
+  <text x="80" y="70" font-family="Inter, Arial, sans-serif" font-size="42" font-weight="700" fill="#172234">Physical AI Safety Agent Architecture</text>
+  <g font-family="Inter, Arial, sans-serif" font-size="18" font-weight="600">
+    <rect x="90" y="135" width="220" height="72" rx="10" fill="#f4f7fb" stroke="#aab7c9"/>
+    <text x="130" y="180" fill="#172234">User / Researcher</text>
+    <rect x="465" y="135" width="300" height="72" rx="10" fill="#e8f1ff" stroke="#7da7e8"/>
+    <text x="515" y="180" fill="#163b72">Orchestrator Agent</text>
+    <rect x="925" y="135" width="250" height="72" rx="10" fill="#f4f7fb" stroke="#aab7c9"/>
+    <text x="975" y="180" fill="#172234">Final Report</text>
+
+    <rect x="95" y="300" width="210" height="70" rx="10" fill="#f6fbff" stroke="#9abce8"/>
+    <text x="135" y="342" fill="#163b72">Design Agent</text>
+    <rect x="340" y="300" width="210" height="70" rx="10" fill="#f6fbff" stroke="#9abce8"/>
+    <text x="378" y="342" fill="#163b72">GPU0 Agent</text>
+    <rect x="585" y="300" width="210" height="70" rx="10" fill="#f6fbff" stroke="#9abce8"/>
+    <text x="623" y="342" fill="#163b72">GPU1 Agent</text>
+    <rect x="830" y="300" width="210" height="70" rx="10" fill="#f6fbff" stroke="#9abce8"/>
+    <text x="864" y="342" fill="#163b72">Eval Agent</text>
+    <rect x="1075" y="300" width="120" height="70" rx="10" fill="#f6fbff" stroke="#9abce8"/>
+    <text x="1103" y="342" fill="#163b72">Safety</text>
+
+    <rect x="220" y="505" width="840" height="84" rx="12" fill="#fff4de" stroke="#d8a84c"/>
+    <text x="500" y="555" fill="#744d08">Tool Boundary + MCP SDK Wrapper</text>
+
+    <rect x="130" y="660" width="210" height="58" rx="10" fill="#edf8ee" stroke="#80bd86"/>
+    <text x="145" y="696" fill="#1f5a28">GPU0 sim/replay</text>
+    <rect x="390" y="660" width="210" height="58" rx="10" fill="#edf8ee" stroke="#80bd86"/>
+    <text x="405" y="696" fill="#1f5a28">GPU1 sim/replay</text>
+    <rect x="650" y="660" width="230" height="58" rx="10" fill="#edf8ee" stroke="#80bd86"/>
+    <text x="690" y="696" fill="#1f5a28">Research PC</text>
+    <rect x="930" y="660" width="210" height="58" rx="10" fill="#fdecec" stroke="#db7d7d"/>
+    <text x="952" y="696" fill="#7b2020">Hardware Gate</text>
+  </g>
+  <g stroke="#738195" stroke-width="4" fill="none" marker-end="url(#arrow2)">
+    <path d="M310 171 L465 171"/>
+    <path d="M765 171 L925 171"/>
+    <path d="M615 207 L200 300"/>
+    <path d="M615 207 L445 300"/>
+    <path d="M615 207 L690 300"/>
+    <path d="M615 207 L935 300"/>
+    <path d="M615 207 L1135 300"/>
+    <path d="M200 370 L435 505"/>
+    <path d="M445 370 L535 505"/>
+    <path d="M690 370 L640 505"/>
+    <path d="M935 370 L745 505"/>
+    <path d="M1135 370 L855 505"/>
+    <path d="M430 589 L235 660"/>
+    <path d="M560 589 L495 660"/>
+    <path d="M710 589 L765 660"/>
+    <path d="M855 589 L1035 660"/>
+  </g>
+  <defs>
+    <marker id="arrow2" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M2,2 L10,6 L2,10 z" fill="#738195"/>
+    </marker>
+  </defs>
+</svg>

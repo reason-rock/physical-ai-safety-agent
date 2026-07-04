@@ -1,0 +1,8 @@
+# Core runtime
+pandas>=1.4,<4
+
+# FastAPI web backend (replaces Streamlit)
+fastapi>=0.115
+uvicorn[standard]>=0.30
+sse-starlette>=2.1
+pydantic>=2.7

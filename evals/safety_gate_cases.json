@@ -1,0 +1,48 @@
+[
+  {
+    "id": "supported_only",
+    "metrics": {
+      "num_rollouts": 10,
+      "fall_free_count": 9,
+      "avg_velocity": 0.041,
+      "target_velocity": 0.055,
+      "torso_pitch_rms": 0.18,
+      "joint_limit_max_ratio": 0.92,
+      "action_jerk": 0.28,
+      "emergency_stop_dry_run": false
+    },
+    "expected_safety_level": "supported_test_only",
+    "expected_free_walking_allowed": false
+  },
+  {
+    "id": "blocked",
+    "metrics": {
+      "num_rollouts": 10,
+      "fall_free_count": 7,
+      "avg_velocity": 0.060,
+      "target_velocity": 0.055,
+      "torso_pitch_rms": 0.28,
+      "joint_limit_max_ratio": 0.98,
+      "action_jerk": 0.40,
+      "emergency_stop_dry_run": false
+    },
+    "expected_safety_level": "blocked",
+    "expected_free_walking_allowed": false
+  },
+  {
+    "id": "free_walk_candidate",
+    "metrics": {
+      "num_rollouts": 10,
+      "fall_free_count": 10,
+      "avg_velocity": 0.052,
+      "target_velocity": 0.055,
+      "torso_pitch_rms": 0.16,
+      "joint_limit_max_ratio": 0.80,
+      "action_jerk": 0.20,
+      "emergency_stop_dry_run": true
+    },
+    "expected_safety_level": "candidate_for_free_walking",
+    "expected_free_walking_allowed": true
+  }
+]
+

@@ -1,0 +1,12 @@
+run_id: control_10073
+node: GPU1
+base_config: demo_data/configs/previous_stable_baseline.yaml
+controlled_variables:
+  robot_model: darwin_op
+  sim_backend: mock_public_demo
+  total_steps: 20000000
+  target_velocity: 0.055
+  sim_timestep: 0.008
+  paired_seeds: [101, 102, 103]
+patch:
+  {}
